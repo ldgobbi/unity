@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
 {
-    [SerializeField] float rcsThrust = 100f;
-    [SerializeField] float mainThrust = 15f;
+    [SerializeField] float rcsThrust = 150f;
+    [SerializeField] float mainThrust = 1500f;
     [SerializeField] float levelLoadDelay = 2f;
 
     [SerializeField] AudioClip mainEngineSound;
