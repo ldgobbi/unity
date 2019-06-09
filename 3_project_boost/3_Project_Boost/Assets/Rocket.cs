@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour
 {
@@ -62,8 +63,13 @@ public class Rocket : MonoBehaviour
             case "Friendly":
                 print("OK");
                 break;
+            case "Finish":
+                print("FINISH");
+                SceneManager.LoadScene(1);
+                break;
             default:
-                print("dead");
+                print("DEAD");
+                SceneManager.LoadScene(0);
                 break;
         }
     }
